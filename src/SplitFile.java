@@ -1,7 +1,9 @@
 import java.util.ArrayList;
 
 public class SplitFile {
-	
+	/* PURPOSE:	
+	 * INPUT:
+	 * OUTPUT:*/
 	public static ArrayList<String> split(String paragraph, int length) {
 		ArrayList<String> line = new ArrayList<>();
 		String str = "";
@@ -44,32 +46,13 @@ public class SplitFile {
 					}
 				}
 			} 
-		}*/
-		
-		
-//		for(int i = 0; i < paragraphs.length; i++) {	
-//			String str = "";
-//			String[] words = paragraphs[i].split(" ");
-//			for(int n = 0; n < words.length; n++){
-//				if (str == ""){                                                                                                       
-//					str = words[n];
-//				}else if ((str + " " + words[n]).length() <= length){
-//					str = str + " " + words[n];	
-//				}else if (words[n].length() >= length){
-//					line.add(str);
-//					str = words[n];
-//				}else{
-//					line.add(str);
-//					str = words[n];
-//				}
-//			}
-//			line.add(str);
-//		}
-//		return line;
-		
-		
+		}*/		
 	}
 	
+	
+	/* PURPOSE:	
+	 * INPUT:
+	 * OUTPUT:*/
 	protected final static String genespace(int n){//static?????
 		String to = "";
 		for(int i = 0; i < n; i++){
@@ -78,6 +61,10 @@ public class SplitFile {
 		return to;
 	}
 	
+	
+	/* PURPOSE:	
+	 * INPUT:
+	 * OUTPUT:*/
 	public static ArrayList<String> right(ArrayList<String> line, int length){
 		String str = "";
 		ArrayList<String> result = new ArrayList<String>();
@@ -92,6 +79,10 @@ public class SplitFile {
 		return result;
 	}
 	
+	
+	/* PURPOSE:	
+	 * INPUT:
+	 * OUTPUT:*/
 	public static ArrayList<String> left(ArrayList<String> line, int length){
 		String str = "";
 		ArrayList<String> result = new ArrayList<String>();
@@ -104,7 +95,11 @@ public class SplitFile {
 		}
 		return result;
 	}
-
+	
+	
+	/* PURPOSE:	
+	 * INPUT:
+	 * OUTPUT:*/
 	public static ArrayList<String> centre(ArrayList<String> line, int length){
 		String str = "";
 		ArrayList<String> result = new ArrayList<String>();
@@ -122,7 +117,11 @@ public class SplitFile {
 		}
 		return result;
 	}
-
+	
+	
+	/* PURPOSE:	
+	 * INPUT:
+	 * OUTPUT:*/
 	public static ArrayList<String> justify(ArrayList<String> line, int length){
 		ArrayList<String> result = new ArrayList<String>();
 		String[] words;
